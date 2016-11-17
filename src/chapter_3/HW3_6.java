@@ -3,6 +3,8 @@ import java.util.*;
 
 public class HW3_6 {
 
+	private static Scanner input;
+
 	public static void main(String[] args) {
 		
 //		3. A sequence of six tests, all scored out of 100, are to be given different
@@ -38,7 +40,7 @@ public class HW3_6 {
 //		digit of the int variable number. For example, if the value of number
 //		is 547, the fragment should print
 		
-		Scanner input = new Scanner(System.in);
+		input = new Scanner(System.in);
 		System.out.println("Input an int : ");
 		int x = input.nextInt();
 		int i = x%10;
