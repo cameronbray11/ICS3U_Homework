@@ -4,6 +4,9 @@ import java.util.*;
 public class HW3_6 {
 
 	private static Scanner input;
+	private static Scanner year;
+	private static Scanner month;
+	private static Scanner day;
 
 	public static void main(String[] args) {
 		
@@ -66,6 +69,24 @@ public class HW3_6 {
 			break;
 			case 9: System.out.println("Nine");
 			break;
+		}
+		
+//		5. Write a program that reads a date in numeric form as a year followed
+//		by a month followed by a day and then prints the date as one might
+//		on a cheque.
+		
+		year = new Scanner(System.in);
+		System.out.println("Input an int for year XXXX : ");
+		int y = year.nextInt();
+		month = new Scanner(System.in);
+		System.out.println("Input an int for month XX: ");
+		int m = month.nextInt();
+		day = new Scanner(System.in);
+		System.out.println("Input an int for the day XX: ");
+		int d = day.nextInt();
+		
+		
+		switch (m){
 		}
 		
 	}
