@@ -1,6 +1,6 @@
 package towersOfHanoi;
 import java.util.*;
-private static Scanner numDisks;
+private static Scanner numDisks
 static private int numberOfDisks;
 static private int[] pole1;
 static private int[] pole2;
@@ -20,9 +20,4 @@ public void RunDoc{
   public void validMove (){
 
     if ((numberOfDisks % 2) == 0){
-      
     }
-
-  }
-
-}
