@@ -79,7 +79,7 @@ public class TicTacToe extends JFrame {
                     int y = (h / 3) * row;
                     Rectangle cell = new Rectangle(x, y, w / 3, h / 3);
                     if (cell.contains(e.getPoint())) {
-                        System.out.println("In");
+                        System.out.println("Test");
                         selectedCell = cell;
                         repaint();
                         break;
@@ -92,7 +92,7 @@ public class TicTacToe extends JFrame {
 
         @Override
         public Dimension getPreferredSize() {
-            return new Dimension(200, 200);
+            return new Dimension(400, 400);
         }
 
         @Override
@@ -110,13 +110,12 @@ public class TicTacToe extends JFrame {
                 g2d.fill(selectedCell);
             }
 
-            g2d.setPaint(Color.BLACK);
-            g2d.setStroke(new BasicStroke(4));
+//            g2d.setPaint(Color.BLACK);
+//            g2d.setStroke(new BasicStroke(4));
             g2d.draw(new Line2D.Double(0, h / 3, w, h / 3));
             g2d.draw(new Line2D.Double(0, h * 2 / 3, w, h * 2 / 3));
             g2d.draw(new Line2D.Double(w / 3, 0, w / 3, h));
             g2d.draw(new Line2D.Double(w * 2 / 3, 0, w * 2 / 3, h));
-            //draw circles and xs by visiting elements in the array List.
             for (Shape shape : shapes) {
                 g2d.setPaint(Color.BLUE);
                 g2d.draw(shape);
