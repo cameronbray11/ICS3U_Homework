@@ -80,8 +80,9 @@ public class TicTacToe extends JFrame {
                     Rectangle cell = new Rectangle(x, y, w / 3, h / 3);
                     if (cell.contains(e.getPoint())) {
 //                        System.out.println("Test");
+                    	
                         selectedCell = cell;
-                        repaint();
+//                        repaint();
                         break;
                     }
                 }
