@@ -37,5 +37,7 @@ public class TowersOfHanoi {
 	}
 	
 	public void legalMove(){
+		
+		
 	}
 }
