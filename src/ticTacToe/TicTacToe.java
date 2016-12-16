@@ -28,7 +28,7 @@ public class TicTacToe extends JFrame{
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		JButton b1 = new JButton("1");
+		JButton b1 = new JButton("");
 		b1.setBounds(4, 5, 117, 91);
 		getContentPane().setLayout(null);
 		getContentPane().add(b1);
@@ -56,13 +56,9 @@ public class TicTacToe extends JFrame{
 						c1 = true;
 						a++;
 				  }
-			    
-			  } 
-			  
-			  
+			  } 	  
 			} );
-		
-		JButton b2 = new JButton("2");
+		JButton b2 = new JButton("");
 		b2.setBounds(138, 5, 117, 91);
 		getContentPane().add(b2);
 		b2.addActionListener(new ActionListener() { 
@@ -92,8 +88,7 @@ public class TicTacToe extends JFrame{
 			    
 			  } 
 			} );
-		
-		JButton b3 = new JButton("3");
+		JButton b3 = new JButton("");
 		b3.setBounds(277, 5, 117, 91);
 		getContentPane().add(b3);
 		b3.addActionListener(new ActionListener() { 
@@ -121,8 +116,7 @@ public class TicTacToe extends JFrame{
 				  }
 			  } 
 			} );
-		
-		JButton b4 = new JButton("4");
+		JButton b4 = new JButton("");
 		b4.setBounds(4, 108, 117, 83);
 		getContentPane().add(b4);
 		b4.addActionListener(new ActionListener() { 
@@ -150,8 +144,7 @@ public class TicTacToe extends JFrame{
 				  }
 			  } 
 			} );
-		
-		JButton b5 = new JButton("5");
+		JButton b5 = new JButton("");
 		b5.setBounds(138, 108, 117, 83);
 		getContentPane().add(b5);
 		b5.addActionListener(new ActionListener() { 
@@ -180,8 +173,7 @@ public class TicTacToe extends JFrame{
 				  }
 			  } 
 			} );
-	
-		JButton b6 = new JButton("6");
+		JButton b6 = new JButton("");
 		b6.setBounds(277, 108, 117, 83);
 		getContentPane().add(b6);
 		b6.addActionListener(new ActionListener() { 
@@ -210,8 +202,7 @@ public class TicTacToe extends JFrame{
 				  }
 			  } 
 			} );
-		
-		JButton b7 = new JButton("7");
+		JButton b7 = new JButton("");
 		b7.setBounds(4, 207, 117, 83);
 		getContentPane().add(b7);
 		b7.addActionListener(new ActionListener() { 
@@ -239,8 +230,7 @@ public class TicTacToe extends JFrame{
 				  }
 			  } 
 			} );
-		
-		JButton b8 = new JButton("8");
+		JButton b8 = new JButton("");
 		b8.setBounds(138, 207, 117, 83);
 		getContentPane().add(b8);
 		b8.addActionListener(new ActionListener() { 
@@ -268,9 +258,7 @@ public class TicTacToe extends JFrame{
 				  }
 			  } 
 			} );
-	
-		
-		JButton b9 = new JButton("9");
+		JButton b9 = new JButton("");
 		b9.setBounds(277, 207, 117, 83);
 		getContentPane().add(b9);
 		b9.addActionListener(new ActionListener() { 
@@ -300,15 +288,17 @@ public class TicTacToe extends JFrame{
 			} );
 		
 /*
- * 		a1/c1	a2/c2	a3/c3
- * 
- * 		a4/c4	a5/c5	a6/c6
- * 
- * 		a7/c7	a8/c8	a9/c9
+ * 		a1/c1 | a2/c2 | a3/c3
+ * 		_____________________
+ * 		a4/c4 | a5/c5 | a6/c6
+ * 		_____________________
+ * 		a7/c7 | a8/c8 | a9/c9
  * 
  */
 		if ((a1&&a2&&a3) || (a4&&a5&&a6) || (a7&&a8&&a9) || (a1&&a4&&a7) || (a2&&a5&&a8) || (a3&&a6&&a9) || (a1&&a5&&a9)){
 			X++;
+		}else if ((c1&&c2&&c3) || (c4&&c5&&c6) || (c7&&c8&&c9) || (c1&&c4&&c7) || (c2&&c5&&c8) || (c3&&c6&&c9) || (c1&&c5&&c9)){
+			O++;
 		}
 		
 		JButton xWin = new JButton("");
@@ -320,7 +310,6 @@ public class TicTacToe extends JFrame{
 		oWin.setBounds(210, 324, 184, 40);
 		getContentPane().add(oWin);
 		oWin.setText("O Win : " + O);
-		
 		
 		JButton Clear = new JButton("CLEAR"); // Clearing the board
 		Clear.setBounds(138, 294, 117, 29);
